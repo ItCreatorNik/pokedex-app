@@ -1,0 +1,12 @@
+.contentWrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  padding: 20px 0;
+
+  @media (max-width: 575px) {
+    padding: 10px 0;
+  }
+}

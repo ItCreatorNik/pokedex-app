@@ -1,0 +1,60 @@
+.form {
+  display: flex;
+  align-items: center;
+
+  gap: 15px;
+}
+
+.formGroup {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  border: 1px solid #555;
+  padding: 15px 20px;
+  border-radius: 25px;
+
+  @media (max-width: 575px) {
+    padding: 10px 15px;
+  }
+}
+
+.searchIcon {
+  width: 20px;
+  height: 20px;
+}
+
+.searchInput {
+  font-family: inherit;
+  max-width: 300px;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 15px;
+
+  @media (max-width: 575px) {
+    background: none;
+  }
+}
+
+.searchBtn {
+  border: none;
+  outline: none;
+  border-radius: 25px;
+  padding: 15px 30px;
+  font-family: inherit;
+  color: #fff;
+  background-color: var(--color-black);
+  cursor: pointer;
+  font-weight: 500;
+  letter-spacing: 2px;
+
+  @media (max-width: 575px) {
+    padding: 10px 15px;
+  }
+}
+
+.searchBtn:hover {
+  background-color: var(--color-grey);
+  color: #000;
+}

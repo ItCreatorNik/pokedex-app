@@ -1,0 +1,72 @@
+.wrapper {
+  display: flex;
+
+  position: fixed;
+  top: 0;
+  left: -300px;
+  width: 250px;
+
+  color: #555;
+  background-color: #f2f2f2;
+  height: 100%;
+  padding: 25px 12px;
+  transition: all 0.3s linear;
+}
+.active {
+  left: 0;
+}
+.filterGroup {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+
+  gap: 20px;
+}
+.filterHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border-bottom: 1px solid darkcyan;
+  padding: 10px 0;
+}
+.filterItems {
+  max-height: 250px;
+  overflow-y: scroll;
+  background: #ffffff;
+
+  animation: fade .3s linear;
+}
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.filterItem {
+  display: flex;
+  gap: 10px;
+
+  padding: 6px 0;
+
+  margin-left: 15px;
+  cursor: pointer;
+}
+.filterToggle {
+  background: none;
+  border: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 32px;
+
+  transition: .3s linear;
+}
+.filterToggle.active {
+  transform: rotateZ(180deg);
+}

@@ -1,0 +1,110 @@
+.wrapper {
+  padding: 40px;
+
+  display: flex;
+  justify-content: center;
+
+  position: sticky;
+  top: 40px;
+  z-index: 200;
+
+  @media (max-width: 575px) {
+    position: static;
+    order: -1;
+  }
+}
+
+.close {
+  position: absolute;
+  top: -30px;
+  right: -35px;
+  z-index: 1000;
+
+  cursor: pointer;
+  background: none;
+  font-size: 32px;
+  border: 0;
+}
+
+.pokemonCard {
+  max-width: 300px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  position: relative;
+
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 12px;
+}
+
+.pokemonImage {
+  background-color: #2ee742;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  width: 250px;
+  height: 250px;
+}
+
+.pokemonImage img {
+  width: 100%;
+  height: 100%;
+}
+
+.stats {
+  width: 100%;
+  text-align: center;
+}
+
+.statsItem {
+  padding: 12px 10px;
+}
+
+.statsItemContent {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 12px;
+}
+
+//.statsItem:not(:last-child) {
+//  border-bottom: 1px solid #cecedc;
+//}
+
+.statsLabel {
+  font-weight: 300;
+}
+
+.statsValue {
+  font-weight: 700;
+}
+
+.statsBar {
+  width: 100%;
+  height: 10px;
+  background: darkgreen;
+  border-radius: 20px;
+
+  position: relative;
+  z-index: 1;
+}
+
+.statsBarFilled {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 2;
+
+  height: 100%;
+  max-width: 100%;
+  background: red;
+  border-radius: 20px;
+}
+
+@media (max-width: 575px) {
+
+}

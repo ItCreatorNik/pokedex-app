@@ -1,0 +1,30 @@
+.cardPokemon {
+  max-width: 300px;
+  width: 100%;
+  height: 100%;
+
+  cursor: pointer;
+}
+
+.cardThumbnail {
+  background-color: #f2f2f2;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  height: 250px;
+}
+
+.cardThumbnail img {
+  width: 100%;
+  height: 100%;
+}
+
+.cardContent {
+  padding: 15px;
+}
+
+.cardContent h3 {
+  color: #333;
+}

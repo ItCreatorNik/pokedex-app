@@ -1,0 +1,30 @@
+.list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.loadMoreWrapper {
+  display: flex;
+  justify-content: center;
+
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.loadMore {
+  border: none;
+  width: 80%;
+  padding: 15px 40px;
+  font-family: inherit;
+  background-color: var(--color-black);
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.loadMore:hover{
+  background-color: var(--color-grey);
+  color: #000;
+}
